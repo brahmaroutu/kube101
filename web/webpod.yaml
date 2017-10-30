@@ -1,0 +1,14 @@
+apiVersion: "v1"
+kind: Pod
+metadata:
+  name: web
+  labels:
+    name: web
+    app: demo
+spec:
+  containers:
+    - name: web
+      image: registry.ng.bluemix.net/ossdemo/webapp
+      ports:
+        - containerPort: 5000
+          protocol: TCP
