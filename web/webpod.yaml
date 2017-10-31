@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
     - name: web
-      image: registry.ng.bluemix.net/ossdemo/webapp
+      image: mhbauer/webapp
       ports:
         - containerPort: 5000
           protocol: TCP
