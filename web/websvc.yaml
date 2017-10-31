@@ -3,13 +3,12 @@ kind: Service
 metadata:
   name: web
   labels:
-    name: web
-    app: demo
+    app: web
 spec:
   selector:
-    name: web 
+    app: web 
   type: NodePort
   ports:
-   - port: 9980
+   - port: 5000
      targetPort: 5000
      protocol: TCP

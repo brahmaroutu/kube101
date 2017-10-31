@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: web
-        image: registry.ng.bluemix.net/ossdemo/webapp
-        imagePullPolicy: IfNotPresent
+        image: mhbauer/webapp
+        imagePullPolicy: Always
         ports:
         - containerPort: 5000
