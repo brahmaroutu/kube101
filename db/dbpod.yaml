@@ -3,12 +3,10 @@ kind: Pod
 metadata:
   name: redis
   labels:
-    name: redis
-    app: demo
+    app: db
 spec:
   containers:
     - name: redis
-      image: redis:latest
+      image: redis
       ports:
         - containerPort: 6379         
-          protocol: TCP
